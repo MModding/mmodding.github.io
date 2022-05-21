@@ -7,8 +7,9 @@ body {
 
 menu {
     background-color: black;
-    border-color: #4a19dd;
+    border-color: #4000ff;
     border-style: solid;
+    border-radius: 8px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -22,18 +23,20 @@ menu {
 
 .menu-buttons {
     align-items: center;
+    margin-right: 10px;
 }
 
 .menu-button {
     text-decoration: none;
-    color: #6148ad;
+    color: #ffffff;
     font-family: 'Roboto', sans-serif;
     padding: 15px;
     padding-left: 25px;
     padding-right: 25px;
     margin: 10px;
     border-style: solid;
-    border-color: #4a19dd
+    border-color: #327aff;
+    border-radius: 10px;
 }
 
 .menu-button:hover {
