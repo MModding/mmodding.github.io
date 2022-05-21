@@ -5,7 +5,38 @@ body {
     margin-left: 0;
 }
 
-.title {
+menu {
+    background-color: black;
+    border-color: #4a19dd;
+    border-style: solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-logo {
+    flex-basis: auto;
+    max-width: 250px;
+    height: auto;
+}
+
+.menu-buttons {
+    align-items: center;
+}
+
+.menu-button {
+    text-decoration: none;
     color: #6148ad;
     font-family: 'Roboto', sans-serif;
+    padding: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin: 10px;
+    border-style: solid;
+    border-color: #4a19dd
+}
+
+.menu-button:hover {
+    background-color: #2e2840;
+    transition: 0.25s;
 }
