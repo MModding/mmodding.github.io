@@ -20,8 +20,9 @@
 
 title: MModding Website
 description: >- # this means to ignore newlines until "baseurl:"
-  The MModding Website for MModding mods.
-baseurl: "mmodding.github.io" # the subpath of your site, e.g. /blog
+  MModding Website for MModding Related Content
+baseurl: "" # the subpath of your site, e.g. /blog
+domain: "mmodding.github.io"
 url: "https://mmodding.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: MModdingTeam
 github_username: MModding
