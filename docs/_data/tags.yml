@@ -1,0 +1,17 @@
+decisive:
+  type: is-danger
+
+update:
+  type: is-link
+
+library:
+  type: is-info
+
+development:
+  type: is-success
+
+teasing:
+  type: is-warning
+
+lore:
+  type: is-primary

@@ -2,7 +2,7 @@
 layout: base
 ---
 
-<div class="home"></div>
+<div class="home">
 
     {%- if site.paginate -%}
         {%- assign posts = paginator.posts -%}
@@ -12,32 +12,43 @@ layout: base
 
     {%- assign date_format = site.minima.date_format -%}
     {%- if posts.size > 0 -%}
-        {%- for post in posts -%}
-        {%- assign post_author = site.data.authors[post.author] -%}
+    <section class="posts-group">
         <br>
-        <div class="box">
-            <article class="media">
-                <div class="media-left">
-                    <figure class="image is-64x64">
-                        <img class="is-rounded" src="{{ post_author.picture }}" alt="Post Image">
-                    </figure>
-                </div>
-                <div class="media-content">
-                    <div class="content">
-                        <p>
-                            <strong>
-                                <a href="{{ post.id }}">{{ post.title }}</a>
-                            </strong>
-                            <br>
-                            {{ post.description }}
-                            <br>
-                            <small>
-                                <a href="https://x.com/{{ post_author.x }}">{{ post.author }}</a> • {{ post.date | date: date_format }}
-                            </small>
-                        </p>
+        <h1 class="title posts-group">Recent Posts</h1>
+        <div class="posts">
+            {%- for post in posts -%}
+            {%- assign post_author = site.data.authors[post.author] -%}
+            <div class="box">
+                <article class="media">
+                    <div class="media-left">
+                        <figure class="image is-64x64">
+                            <img class="is-rounded" src="{{ post_author.picture }}" alt="Post Image">
+                        </figure>
                     </div>
-                </div>
-            </article>
+                    <div class="media-content">
+                        <div class="content">
+                            <p>
+                                <strong>
+                                    <a href="{{ post.id }}">{{ post.title }}</a>
+                                </strong>
+                                {%- for post_tag in post.tags -%}
+                                {%- assign current_tag = site.data.tags[post_tag] -%}
+                                <span class="tag {{ current_tag.type }}">#{{ post_tag }}</span>
+                                {%- endfor -%}
+                                <br>
+                                {{ post.description }}
+                                <br>
+                                <small>
+                                    <a href="https://x.com/{{ post_author.x }}">{{ post.author }}</a> • {{ post.date | date: date_format }}
+                                </small>
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <br>
+            {%- endfor -%}
         </div>
-        {%- endfor -%}
+    </section>
     {%- endif -%}
+</div>
