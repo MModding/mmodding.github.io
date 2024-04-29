@@ -1,13 +1,19 @@
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    {%- seo -%}
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
-    {%- feed_meta -%}
-    {%- if jekyll.environment == 'production' and site.google_analytics -%}
-      {%- include google-analytics.html -%}
-    {%- endif -%}
-    {%- include custom-head.html -%}
-    {%- include css-properties.html -%}
+  <title>Website Name</title>
+  <meta content="{{ site.title }}" property="og:title">
+  <meta content="{{ site.description }}" property="og:description">
+  <meta content="{{ site.url }}" property="og:url">
+  <meta content="{{ site.art_root }}/brand/mmodding.png" property="og:image">
+  <meta content="#6100b0" data-react-helmet="true" name="theme-color">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {%- seo -%}
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+  {%- feed_meta -%}
+  {%- if jekyll.environment == 'production' and site.google_analytics -%}
+    {%- include google-analytics.html -%}
+  {%- endif -%}
+  {%- include custom-head.html -%}
+  {%- include css-properties.html -%}
 </head>
