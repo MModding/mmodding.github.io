@@ -3,3 +3,41 @@ layout: base
 ---
 
 <div class="home"></div>
+
+    {%- if site.paginate -%}
+        {%- assign posts = paginator.posts -%}
+    {%- else -%}
+        {%- assign posts = site.posts -%}
+    {%- endif -%}
+
+    {%- assign date_format = site.minima.date_format -%}
+    {%- if posts.size > 0 -%}
+        {%- for post in posts -%}
+        {%- assign post_author = site.data.authors[post.author] -%}
+        <br>
+        <div class="box">
+            <article class="media">
+                <div class="media-left">
+                    <figure class="image is-64x64">
+                        <img class="is-rounded" src="{{ post_author.picture }}" alt="Post Image">
+                    </figure>
+                </div>
+                <div class="media-content">
+                    <div class="content">
+                        <p>
+                            <strong>
+                                <a href="{{ post.id }}">{{ post.title }}</a>
+                            </strong>
+                            <br>
+                            {{ post.description }}
+                            <br>
+                            <small>
+                                <a href="https://x.com/{{ post_author.x }}">{{ post.author }}</a> • {{ post.date | date: date_format }}
+                            </small>
+                        </p>
+                    </div>
+                </div>
+            </article>
+        </div>
+        {%- endfor -%}
+    {%- endif -%}
