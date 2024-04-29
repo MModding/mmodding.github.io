@@ -2,7 +2,7 @@
 layout: post
 title: "Blog Introduction"
 date: 2024-04-30 00:16:58 UTC+0100
-categories: jekyll updates
+categories: jekyll update
 author: Mega
 description: The first blog post, summarizing the arrival of the website rework and the new blog.
 tags:
