@@ -3,12 +3,7 @@ layout: base
 ---
 
 <div class="home">
-    {%- if site.paginate -%}
-        {%- assign posts = paginator.posts -%}
-    {%- else -%}
-        {%- assign posts = site.posts -%}
-    {%- endif -%}
-
+    {%- assign posts = site.posts -%}
     {%- assign date_format = site.minima.date_format -%}
     {%- if posts.size > 0 -%}
     <section class="posts-group">
