@@ -19,7 +19,7 @@ Discord isn't bad at all, otherwise we wouldn't have a dedicated server to our t
 - We can't write very long messages. Pretty annoying when we want to write big messages.
 - We can controll the website user-interface, contrary to Discord's one.
 - We can classify our posts with tags, allowing you to understand what are the main ideas of them.
-- We can use attachments in a better way, spreading them into the post instead of just having all of them at the bottom of message.
+- We can use attachments in a better way, spreading them into the post instead of just having all of them at the bottom of the message.
 
 As you can see, the post display is still a bit weird, but we will enhance it in order to have a better website look in the future.
 
