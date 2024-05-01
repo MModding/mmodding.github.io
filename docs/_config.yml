@@ -22,8 +22,8 @@ title: MModding Website
 description: >- # this means to ignore newlines until "baseurl:"
   The official website about MModding and their mods, powered up by QuiltMC & FabricMC Toolchains for the Minecraft game.
 baseurl: "" # the subpath of your site, e.g. /blog
-domain: "mmodding.github.io"
-url: "https://mmodding.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+domain: "mmodding.com"
+url: "https://mmodding.com" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 theme: minima
