@@ -1,0 +1,39 @@
+---
+layout: base
+---
+
+<section class="section">
+    <div class="box big-post-box">
+        <h1 class="title before-tag">
+            {{ page.title }}
+            <p>
+                {%- for tag in page.tags -%}
+                {%- assign current_tag = site.data.tags[tag] -%}
+                <span class="tag {{ current_tag.type }}">#{{ tag }}</span>
+                {%- endfor -%}
+            </p>
+        </h1>
+        <div class="markdown-content">
+            {{ content }}
+        </div>
+        <nav class="level">
+            <div class="level-left">
+                <div class="level-item">
+                    <figure class="image is-32x32">
+                        {%- for author in page.author -%}
+                            {%- assign post_author = site.data.authors[author] -%}
+                            {%- assign author_name = page.author -%}
+                            <img class="is-rounded" src="{{ post_author.picture }}" alt="Post Image">
+                        {%- endfor -%}
+                    </figure>
+                </div>
+                <div class="level-item">
+                    {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+                    <h3>
+                        <a href="https://x.com/{{ post_author.x }}">{{ author_name }}</a> • Written on {{ page.date | date: date_format }}
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -16,7 +16,7 @@ Hey y'all our dear users! This the first post of this new blog!
 The reason behind it is that I wanted to give to the MModding Organization a proper website (at least better than the old one) and to add it a blog in order to write better information for our users.
 
 Discord isn't bad at all, otherwise we wouldn't have a dedicated server to our team content in it, but it still has some limitations:
-- We can't write very long messages. Pretty annoying when we want to write big messages.
+- We can't write very long messages. Pretty annoying when we need to write them like that.
 - We can controll the website user-interface, contrary to Discord's one.
 - We can classify our posts with tags, allowing you to understand what are the main ideas of them.
 - We can use attachments in a better way, spreading them into the post instead of just having all of them at the bottom of the message.

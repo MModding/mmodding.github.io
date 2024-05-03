@@ -17,16 +17,16 @@ layout: base
         <div class="posts">
             {%- for post in posts -%}
             {%- assign post_author = site.data.authors[post.author] -%}
-            <div class="box">
+            <div class="box post-box">
                 <article class="media">
                     <div class="media-left">
                         <figure class="image is-64x64">
-                            <img class="is-rounded" src="{{ post_author.picture }}" alt="Post Image">
+                            <img class="is-rounded" src="{{ post_author.picture }}" alt="Author Picture">
                         </figure>
                     </div>
                     <div class="media-content">
                         <div class="content">
-                            <p class="post-content">
+                            <p>
                                 <strong>
                                     <a href="{{ post.id }}">{{ post.title }}</a>
                                 </strong>

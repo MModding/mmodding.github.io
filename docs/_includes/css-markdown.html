@@ -1,0 +1,117 @@
+<style>
+    .markdown-content h1 {
+        font-size: 2.235;
+        letter-spacing: -1px;
+        line-height: 1.15;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .markdown-content h2 {
+        font-size: 1.75;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .markdown-content h3 {
+        font-size: 1.375;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .markdown-content h4 {
+        font-size: 1.25;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .markdown-content h5 {
+        font-size: 1.125;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .markdown-content h6 {
+        font-size: 1.0625;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .markdown-content ul {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .markdown-content ul {
+        margin-left: 15px;
+    }
+    .markdown-content p {
+        margin-bottom: 15px;
+    }
+    .highlight { /* Modified (when using RGB) Highlight of the Jekyll Minima Theme: all credits goes there https://github.com/jekyll/minima/blob/main/_sass/minima/skins/auto.scss#L134-L139 */
+        .c     { color: rgb(150, 150, 150); font-style: italic } /* Comment */
+        .err   { color: #ff2b36; } /* Error */
+        .k     { color: rgb(243, 105, 255) } /* Keyword */
+        .cm    { color: rgb(150, 150, 150); font-style: italic } /* Comment.Multiline */
+        .cp    { color: rgb(150, 150, 150) } /* Comment.Preproc */
+        .c1    { color: rgb(150, 150, 150); font-style: italic } /* Comment.Single */
+        .cs    { color: rgb(150, 150, 150); font-style: italic } /* Comment.Special */
+        .gd    { color: #000; background-color: #fdd } /* Generic.Deleted */
+        .gd .x { color: #000; background-color: #faa } /* Generic.Deleted.Specific */
+        .ge    { font-style: italic } /* Generic.Emph */
+        .gr    { color: #f07178 } /* Generic.Error */
+        .gh    { color: #999 } /* Generic.Heading */
+        .gi    { color: #000; background-color: #dfd } /* Generic.Inserted */
+        .gi .x { color: #000; background-color: #afa } /* Generic.Inserted.Specific */
+        .go    { color: #888 } /* Generic.Output */
+        .gp    { color: #555 } /* Generic.Prompt */
+        .gs    { font-weight: bold } /* Generic.Strong */
+        .gu    { color: #aaa } /* Generic.Subheading */
+        .gt    { color: #f07178 } /* Generic.Traceback */
+        .kn     { color: rgb(243, 105, 255) } /* Keyword.Import */
+        .kd    { color: rgb(243, 105, 255) } /* Keyword.Declaration */
+        .kp    { color: rgb(243, 105, 255) } /* Keyword.Pseudo */
+        .kr    { color: rgb(243, 105, 255) } /* Keyword.Reserved */
+        .kt    { color: rgb(243, 105, 255) } /* Keyword.Type */
+        .kc    { color: rgb(243, 105, 255) } /* Keyword.Boolean */
+        .m     { color: rgb(66, 214, 153) } /* Literal.Number */
+        .s     { color: rgb(66, 214, 153) } /* Literal.String */
+        .n     { color: rgb(228, 136, 17) }
+        .na    { color: rgb(78, 175, 255) } /* Name.Attribute */
+        .nb    { color: #EEFFFF } /* Name.Builtin */
+        .nc    { color: rgb(255, 216, 145) } /* Name.Class */
+        .nd    { color: rgb(255, 216, 145) } /* Name.Annotation */
+        .no    { color: rgb(228, 136, 17) } /* Name.Constant */
+        .ni    { color: #800080 } /* Name.Entity */
+        .ne    { color: #900 } /* Name.Exception */
+        .nf    { color: rgb(78, 175, 255) } /* Name.Function */
+        .nn    { color: rgb(243, 105, 255) } /* Name.Namespace */
+        .nt    { color: #FFCB6B } /* Name.Tag */
+        .nv    { color: #EEFFFF } /* Name.Variable */
+        .nl    { color: rgb(52, 116, 255) } /* Name.JSONKey */
+        .ow    { font-weight: bold } /* Operator.Word */
+        .w     { color: #EEFFFF } /* Text.Whitespace */
+        .mf    { color: rgb(66, 214, 153) } /* Literal.Number.Float */
+        .mh    { color: rgb(66, 214, 153) } /* Literal.Number.Hex */
+        .mi    { color: rgb(66, 214, 153) } /* Literal.Number.Integer */
+        .mo    { color: rgb(66, 214, 153) } /* Literal.Number.Oct */
+        .sb    { color: rgb(66, 214, 153) } /* Literal.String.Backtick */
+        .sc    { color:rgb(66, 214, 153) } /* Literal.String.Char */
+        .sd    { color: rgb(66, 214, 153) } /* Literal.String.Doc */
+        .s2    { color:rgb(66, 214, 153) } /* Literal.String.Double */
+        .se    { color: rgb(66, 214, 153) } /* Literal.String.Escape */
+        .sh    { color: rgb(66, 214, 153) } /* Literal.String.Heredoc */
+        .si    { color: rgb(66, 214, 153) } /* Literal.String.Interpol */
+        .sx    { color: rgb(66, 214, 153) } /* Literal.String.Other */
+        .sr    { color: rgb(66, 214, 153) } /* Literal.String.Regex */
+        .s1    { color: rgb(66, 214, 153) } /* Literal.String.Single */
+        .ss    { color: rgb(66, 214, 153) } /* Literal.String.Symbol */
+        .bp    { color: #999 } /* Name.Builtin.Pseudo */
+        .vc    { color: #FFCB6B } /* Name.Variable.Class */
+        .vg    { color: #EEFFFF } /* Name.Variable.Global */
+        .vi    { color: #EEFFFF } /* Name.Variable.Instance */
+        .py    { color: rgb(243, 105, 255) } /* Name.Variable.TOML */
+        .il    { color: #F78C6C } /* Literal.Number.Integer.Long */
+    }
+    @media screen and (min-width: 800px) {
+        .markdown-content h2 {
+            font-size: 2.0;
+        }
+        .markdown-content h3 {
+            font-size: 1.625;
+        }
+    }
+</style>
