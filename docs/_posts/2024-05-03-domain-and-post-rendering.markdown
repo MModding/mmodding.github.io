@@ -11,7 +11,7 @@ tags:
 
 Hey dear members! Here I am with the news!
 
-Yesterday, **I carefully applied the `mmodding.com` domain to our website** (that we did't own before sadly, yeah) meaning that we have now beautiful links for our socials!
+Yesterday, **I carefully applied the `mmodding.com` domain to our website** (that we did not own before sadly, yeah) meaning that we have now beautiful links for our socials!
 - [mmodding.com/youtube](https://mmodding.com/youtube) redirects to our YouTube channel
 - [mmodding.com/discord](https://mmodding.com/discord) redirects to our Discord server
 - [mmodding.com/x](https://mmodding.com/x) redirects to our X/Twitter profile
@@ -19,7 +19,7 @@ Yesterday, **I carefully applied the `mmodding.com` domain to our website** (tha
 
 I may also add Modrinth and Curseforge link? Not sure about that. If I do it it should probably be separated from the other ones in the navbar at least.
 
-Second thing: **I now updated the posts render!** It's not perfect yet, it will probably have other improvements in the future, but currently it is sufficent for us.
+Second thing: **I have now updated the posts render!** It's not perfect yet, it will probably have other improvements in the future, but currently it is sufficent for us.
 - The markdown now renders better than before.
 - Some work on the codeblock css to prepare a color highlighting syntax for the future docs.
 
