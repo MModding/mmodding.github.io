@@ -32,6 +32,9 @@ plugins:
 
 art_root: "https://raw.githubusercontent.com/MModding/art/main"
 
+socials:
+  discord: gMaqQBsXAa
+
 minima:
   skin: dark
 
