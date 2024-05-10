@@ -1,6 +1,6 @@
 ---
-layout: doc
 title: "Use Custom BlockEntity Types"
+layout: doc
 ---
 
 With the `CustomBlockEntityType` class provided by the MModding Library, registering a new BlockEntityType is more simple.
@@ -17,7 +17,7 @@ public class MModdingBlockEntity extends BlockEntity {
 }
 ```
 
-<div class="notification is-warning">Warning: "NOTHING" is not permanent, we will replace it later.</div>
+<div class="notification is-warning is-dark">Warning: "NOTHING" is not permanent, we will replace it later.</div>
 
 ## **Create and register your BlockEntityType**
 
@@ -31,7 +31,7 @@ public class BlockEntityTypes {
 }
 ```
 
-<div class="notification is-success">Tip: Replace "BLOCK" by the instance of the block that uses the BlockEntity.</div>
+<div class="notification is-success is-dark">Tip: Replace "BLOCK" by the instance of the block that uses the BlockEntity.</div>
 
 **Update your BlockEntity class**
 

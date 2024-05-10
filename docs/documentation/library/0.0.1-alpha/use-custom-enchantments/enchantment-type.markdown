@@ -1,6 +1,6 @@
 ---
-layout: doc
 title: "Enchantment Type"
+layout: doc
 ---
 
 ## Several features may not work properly.

@@ -1,6 +1,6 @@
 ---
-layout: doc
 title: "Use Element Initializers"
+layout: doc
 ---
 
 ## **Create an Element Initializer**
@@ -24,7 +24,7 @@ public class MModdingModBlocks implements ElementsInitializer {
 }
 ```
 
-<div class="notification is-success">Tip: For more information about the <code>CustomBlock</code>, go to the <code>CustomBlock</code> Page</div>
+<div class="notification is-success is-dark">Tip: For more information about the <code>CustomBlock</code>, go to the <code>CustomBlock</code> Page</div>
 
 # **Register an Elements Initializer**
 

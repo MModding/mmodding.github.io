@@ -28,4 +28,4 @@ public class MModdingExempleMod implements MModdingModInitializer {
 }
 ```
 
-<div class="notification is-warning">Warning: You must replace <code>MModdingExempleMod</code> by your mod's name!</div>
+<div class="notification is-warning is-dark">Warning: You must replace <code>MModdingExempleMod</code> by your mod's name!</div>

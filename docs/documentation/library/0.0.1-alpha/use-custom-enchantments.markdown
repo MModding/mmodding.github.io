@@ -1,6 +1,6 @@
 ---
-layout: doc
 title: "Use Custom Enchantments"
+layout: doc
 ---
 
 Use `CustomEnchantment` allow you to set a EnchantmentType for your Enchantment. You can also easly register your Enchantment with `CustomEnchantment#register`.
@@ -22,7 +22,7 @@ public class Enchantments implements ElementsInitializer {
 }
 ```
 
-<div class="notification is-success">Tip: `EnchantmentType.DEFAULT` represents a normal enchantment.</div>
-<div class="notification is-success">Tip: Enchantment Rarity can be: `COMMON` `UNCOMMON` `RARE` `VERY_RARE`.</div>
-<div class="notification is-success">Tip: Enchantment Target can be: `ARMOR` `ARMOR_FEET` `ARMOR_LEGS` `ARMOR_CHEST` `ARMOR_HEAD` `WEAPON` `DIGGER` `FISHING_ROD` `TRIDENT` `BREAKABLE` `BOW` `WEARABLE` `CROSSBOW` `VANISHABLE`.</div>
-<div class="notification is-success">Tip: Equipment Slot can be: `MAINHAND` `OFFHAND` `FEET` `LEGS` `CHEST` `HEAD`.</div>
+<div class="notification is-success is-dark">Tip: <code>EnchantmentType.DEFAULT</code> represents a normal enchantment.</div>
+<div class="notification is-success is-dark">Tip: Enchantment Rarity can be: <code>COMMON</code> <code>UNCOMMON</code> <code>RARE</code> <code>VERY_RARE</code>.</div>
+<div class="notification is-success is-dark">Tip: Enchantment Target can be: <code>ARMOR</code> <code>ARMOR_FEET</code> <code>ARMOR_LEGS</code> <code>ARMOR_CHEST</code> <code>ARMOR_HEAD</code> <code>WEAPON</code> <code>DIGGER</code> <code>FISHING_ROD</code> <code>TRIDENT</code> <code>BREAKABLE</code> <code>BOW</code> <code>WEARABLE</code> <code>CROSSBOW</code> <code>VANISHABLE</code>.</div>
+<div class="notification is-success is-dark">Tip: Equipment Slot can be: <code>MAINHAND</code> <code>OFFHAND</code> <code>FEET</code> <code>LEGS</code> <code>CHEST</code> <code>HEAD</code>.</div>

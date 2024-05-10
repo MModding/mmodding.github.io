@@ -19,7 +19,7 @@ mmodding = "VERSION"
 mmodding = { module = "com.mmodding:mmodding-library", version.ref = "mmodding" }
 ```
 
-<div class="notification is-success">Tip: check the release tags on GitHub to see what to replace <code>VERSION</code> with.</div>
+<div class="notification is-success is-dark">Tip: check the release tags on GitHub to see what to replace <code>VERSION</code> with.</div>
 
 Then go to your `build.gradle` file:
 
@@ -38,4 +38,4 @@ dependencies {
 }
 ```
 
-<div class="notification is-warning">Warning: Do not put this in your buildscript section!</div>
+<div class="notification is-warning is-dark">Warning: Do not put this in your buildscript section!</div>
