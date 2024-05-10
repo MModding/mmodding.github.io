@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+{%- assign lurl = page.url | split: "/" -%}
+{%- assign doc = lurl.last -%}
+{%- assign versions = site.data.documentation[doc] -%}
+{%- for version in versions -%}
+    {%- assign last_version = version -%}
+{%- endfor -%}
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="refresh" content="0; url='{{ site.url }}/documentation/{{ doc }}/{{ last_version[0] | replace: '_', '.' }}/introduction'">
+        <title>{{ doc | replace: "-", " " | capitalize }}</title>
+    </head>
+</html>

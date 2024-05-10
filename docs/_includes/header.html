@@ -4,6 +4,16 @@
             <img src="{{ site.art_root }}/brand/mmodding_title.png" alt="MModding Title">
         </a>
     </div>
+    <div class="navbar-start">
+        <div class="navbar-item has-dropdown is-hoverable">
+            <p class="navbar-link">Documentation</p>
+            <div class="navbar-dropdown">
+                {%- for doc in site.data.documentation -%}
+                    <a class="navbar-item" href="{{ site.url }}/documentation/{{ doc[0] }}">{{ doc[0] | replace: "-", " " | capitalize }}</a>
+                {%- endfor -%}
+            </div>
+        </div>
+    </div>
     <div class="navbar-end">
         <a class="navbar-item brand-logo" href="{{ site.url }}/youtube">
             <img src="{{ site.url }}/assets/youtube.png" alt="YouTube Logo">
