@@ -1,0 +1,11 @@
+categories:
+  - beginning
+  - core
+
+content:
+  introduction:
+    category: beginning
+    children:
+      - modding-prerequisties
+      - toolchain-tutorials
+      - installing-the-library

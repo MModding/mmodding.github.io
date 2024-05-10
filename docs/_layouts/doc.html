@@ -1,0 +1,79 @@
+---
+layout: base
+---
+
+{%- assign lurl = page.url | split: "/" -%}
+{%- assign doc = lurl[2] -%}
+{%- assign version = lurl[3] -%}
+{%- assign data_version = lurl[3] | replace: ".", "_" -%}
+
+<section class="section section-doc">
+    <nav class="level">
+        <div class="level-left box">
+            <aside class="menu">
+                {%- for category in site.data.documentation[doc][data_version]["categories"] -%}
+                <p class="menu-label">{{ category }}</p>
+                <ul class="menu-list">
+                    {%- for parent_page in site.data.documentation[doc][data_version]["content"] -%}
+                        {%- if parent_page[1]["category"] == category -%}
+                            {%- assign url_constructor = "" -%}
+                            {%- for url_element in lurl limit: 4 -%}
+                                {%- capture url_constructor -%}{{ url_constructor }}{{ url_element }}/{%- endcapture -%}
+                            {%- endfor -%}
+                            {%- capture url_constructor -%}{{ url_constructor }}{{ parent_page[0] }}{%- endcapture -%}
+                            {%- assign current_lurl = url_constructor | split: "/" -%}
+                            <li>
+                                {%- if lurl.last == parent_page[0] -%}
+                                    <a class="is-active has-background-link-15" href="{{ current_lurl | join: '/' }}">{{ parent_page[0] | replace: "-", " " | capitalize }}</a>
+                                {%- else -%}
+                                    <a href="{{ current_lurl | join: '/' }}">{{ parent_page[0] | replace: "-", " " | capitalize }}</a>
+                                {%- endif -%}
+                                {%- if parent_page[1]["children"] != nil -%}
+                                    <ul>
+                                    {%- for child in parent_page[1]["children"] -%}
+                                        {%- if lurl.last == child -%}
+                                            <li><a class="is-active has-background-link-15" href="{{ current_lurl | join: '/' | append: '/' | append: child }}"> {{ child | replace: "-", " " | capitalize }}</a></li>
+                                        {%- else -%}
+                                            <li><a href="{{ current_lurl | join: '/' | append: '/' | append: child }}"> {{ child | replace: "-", " " | capitalize }}</a></li>
+                                        {%- endif -%}
+                                    {%- endfor -%}
+                                    </ul>
+                                {%- endif -%}
+                            </li>
+                        {%- endif -%}
+                    {%- endfor -%}
+                </ul>
+                {%- endfor -%}
+            </aside>
+        </div>
+        <div class="level-item">
+            <div class="box big-post-box">
+                <h1 class="title">{{ page.title }}</h1>
+                <div class="markdown-content">
+                    {{ content }}
+                </div>
+            </div>
+        </div>
+        <div class="level-right">
+            <div class="dropdown is-hoverable">
+                <div class="dropdown-trigger">
+                    <button class="button" aria-haspopup="true" aria-controls="version-selector">
+                        <span>Version Selector ▼</span>
+                    </button>
+                </div>
+                <div class="dropdown-menu" id="version-selector" role="menu">
+                    <div class="dropdown-content">
+                        {%- for current_version_data in site.data.documentation[doc] -%}
+                            {%- assign current_version = current_version_data[0] | replace: "_", "." -%}
+                            {%- if current_version == version -%}
+                                <a href="{{ lurl | slice: 0, 5 | join: "/" }}" class="dropdown-item is-active has-background-link-15">{{ current_version }}</a>
+                            {%- else -%}
+                                <a href="{{ lurl | slice: 0, 5 | join: "/" | replace: version, current_version }}" class="dropdown-item">{{ current_version }}</a>
+                            {%- endif -%}
+                        {%- endfor -%}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

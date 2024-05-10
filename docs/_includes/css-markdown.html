@@ -41,7 +41,10 @@
     .markdown-content p {
         margin-bottom: 15px;
     }
-    .highlight { /* Modified (when using RGB) Highlight of the Jekyll Minima Theme: all credits goes there https://github.com/jekyll/minima/blob/main/_sass/minima/skins/auto.scss#L134-L139 */
+    .markdown-content code {
+        background-color: rgb(0, 2, 17);
+    }
+    .markdown-content .highlight { /* Modified (when using RGB) Highlight of the Jekyll Minima Theme: all credits goes there https://github.com/jekyll/minima/blob/main/_sass/minima/skins/auto.scss#L134-L139 */
         .c     { color: rgb(150, 150, 150); font-style: italic } /* Comment */
         .err   { color: #ff2b36; } /* Error */
         .k     { color: rgb(243, 105, 255) } /* Keyword */
@@ -105,6 +108,8 @@
         .vi    { color: #EEFFFF } /* Name.Variable.Instance */
         .py    { color: rgb(243, 105, 255) } /* Name.Variable.TOML */
         .il    { color: #F78C6C } /* Literal.Number.Integer.Long */
+        background-color: rgb(0, 2, 17);
+        margin-bottom: 15px;
     }
     @media screen and (min-width: 800px) {
         .markdown-content h2 {

@@ -1,0 +1,16 @@
+categories:
+  - beginning
+  - core
+  - util
+
+content:
+  introduction:
+    category: beginning
+  create-the-main-class:
+    category: core
+    children:
+      - use-element-initializers
+      - use-custom-blockentity-types
+  use-custom-enchantments:
+    category: util
+      - enchantment-type
