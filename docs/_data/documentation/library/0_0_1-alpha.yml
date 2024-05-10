@@ -13,4 +13,5 @@ content:
       - use-custom-blockentity-types
   use-custom-enchantments:
     category: util
+    children:
       - enchantment-type
