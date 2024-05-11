@@ -5,9 +5,9 @@ layout: doc
 
 Create a new class in your mod package that implements `MModdingModInitializer`:
 
-`MModdingExempleMod.java`
+`MModdingExampleMod.java`
 ```java
-public class MModdingExempleMod implements MModdingModInitializer {
+public class MModdingExampleMod implements MModdingModInitializer {
 
     public static MModdingModContainer mod;
     
@@ -21,11 +21,11 @@ public class MModdingExempleMod implements MModdingModInitializer {
     @Override
     public void onInitialize(ModContainer mod) {
         MModdingModInitializer.super.onInitialize();
-        MModdingExempleMod.mod = MModdingModContainer.from(mod);
+        MModdingExampleMod.mod = MModdingModContainer.from(mod);
         
         // Your amazing code here
     }
 }
 ```
 
-<div class="notification is-warning is-dark">Warning: You must replace <code>MModdingExempleMod</code> by your mod's name!</div>
+<div class="notification is-warning is-dark">Warning: You must replace <code>MModdingExampleMod</code> by your mod's name!</div>

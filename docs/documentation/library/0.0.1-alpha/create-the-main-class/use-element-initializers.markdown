@@ -12,7 +12,7 @@ public class MModdingModBlocks implements ElementsInitializer {
     // Init a block
     public static final CustomBlock MMODDING_BLOCK = new CustomBlock(
         QuiltBlockSettings.of(Material.METAL)
-    )
+    );
     
     @Override
     public void register() {
