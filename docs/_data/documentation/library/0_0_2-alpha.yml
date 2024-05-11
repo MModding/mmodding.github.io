@@ -1,0 +1,10 @@
+categories:
+- core
+
+content:
+  introduction:
+    category: core
+  children:
+    - create-the-main-class
+    - manage-elements-with-elements-initializers
+    - client-side-and-server-side-management
